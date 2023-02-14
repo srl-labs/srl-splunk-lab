@@ -54,7 +54,7 @@ topology:
       mgmt_ipv4: 172.22.22.11 # Pick a fixed IP
       startup-delay: 30 # Give splunk a chance to start first, wait-for doesn't work
       env:
-        SC4S_DEST_SPLUNK_HEC_DEFAULT_URL: https://172.20.20.11:8088
+        SC4S_DEST_SPLUNK_HEC_DEFAULT_URL: https://172.22.22.10:8088
         SC4S_DEST_SPLUNK_HEC_DEFAULT_TOKEN: 1c1e59c3-27c2-48dc-b85b-34f8ffef7600
         SC4S_DEST_SPLUNK_HEC_DEFAULT_TLS_VERIFY: no
       binds:
