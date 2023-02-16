@@ -46,12 +46,7 @@ sudo clab deploy
 Your pre-configured Splunk instance should available via [http://localhost:8000](http://localhost:8000).
 Now you can login to the dashboard (admin/changeme), go to the 'Search' tab and search for 'index="netops"'
 
-![kibana discovery][kibaba_dashboard]
+![splunk search][./splunk_search.png]
 
-![kibana dashboard][kibaba_dashboard_2]
-
-[kibaba_dashboard]: ./pic/kibana_dashboard.png "Kibana dashboard #1"
-[kibaba_dashboard_2]: ./pic/kibana_dashboard_2.png "Kibana dashboard #2"
-[outage_simulation]: ./pic/outage_simulation.gif "Simulation"
 [srk-with-splunk-post]: https://learn.srlinux.dev/blog/2023/sr-linux-logging-with-splunk/
 [topology]: ./splunk_topology.png
