@@ -8,9 +8,9 @@ A series of blog posts go into the details of various deployment models:
 
 ## Lab Topology
 
-The [srl-elk.clab.yml](srl-elk.clab.yml) topology represents a 2-tier Clos fabric with 2 clients participating in a single L2 EVPN domain.
+The [srl-splunk.clab.yml](srl-splunk.clab.yml) topology represents a 2-tier Clos fabric with 2 clients participating in a single L2 EVPN domain.
 
-![ELK lab topology][topology]
+![Splunk lab topology][topology]
 
 Naming conventions are straighforward:
 
