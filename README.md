@@ -1,6 +1,6 @@
 # Intro
 
-This repo contains containerlab-based labs demonstrating how logs from SR Linux network elements can be collected, parsed, and stored using [Splunk](https://www.splunk.com/) with [Splunk-Connect-4-Syslog](https://splunkbase.splunk.com/app/4740).
+This repo contains containerlab-based labs demonstrating how logs from SR Linux network elements can be collected, parsed, and stored using [Splunk](https://www.splunk.com/) with [Splunk-Connect-4-Syslog](https://splunkbase.splunk.com/app/4740) (using a [custom log parser](./app-syslog-nokia_srlinux.conf))
 
 A series of blog posts go into the details of various deployment models:
 
