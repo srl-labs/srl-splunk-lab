@@ -1,10 +1,10 @@
 # Intro
 
-This repo contains containerlab-based labs demonstrating how logs from SR Linux network elements can be collected, parsed, and stored using Elasticsearch/Logstash/Kibana (ELK) stack.
+This repo contains containerlab-based labs demonstrating how logs from SR Linux network elements can be collected, parsed, and stored using [Splunk](https://www.splunk.com/) with [Splunk-Connect-4-Syslog](https://splunkbase.splunk.com/app/4740).
 
-A series of blog posts go into the details of various ELK deployment models:
+A series of blog posts go into the details of various deployment models:
 
-1. [SR Linux logging with ELK][srk-with-elk-post] - an introduction to the modern logging infrastructure using ELK stack.
+1. [SR Linux logging with Splunk][srk-with-splunk-post] - an introduction to the modern logging infrastructure using Splunk.
 
 ## Lab Topology
 
@@ -125,7 +125,7 @@ To run simulation just execute ```./outage_simulation.sh``` or ```./outage_simul
 
 ## Kibana
 
-Your pre-configured Kibana should available via [http://localhost:5601](http://localhost:5601).
+Your pre-configured Splunk instance should available via [http://localhost:8000](http://localhost:8000).
 Now you can go to to Discovery and Dashboard under Analytics and see a demo dashboard.
 
 ![kibana discovery][kibaba_dashboard]
@@ -135,5 +135,5 @@ Now you can go to to Discovery and Dashboard under Analytics and see a demo dash
 [kibaba_dashboard]: ./pic/kibana_dashboard.png "Kibana dashboard #1"
 [kibaba_dashboard_2]: ./pic/kibana_dashboard_2.png "Kibana dashboard #2"
 [outage_simulation]: ./pic/outage_simulation.gif "Simulation"
-[srk-with-elk-post]: https://learn.srlinux.dev/blog/2023/sr-linux-logging-with-elk/
+[srk-with-splunk-post]: https://learn.srlinux.dev/blog/2023/sr-linux-logging-with-splunk/
 [topology]: ./splunk_topology.png
