@@ -50,7 +50,8 @@ topology:
     #
     splunk-connect-for-syslog:
       kind: linux
-      image: splunk/scs
+      # image: splunk/scs # Too old, more than a year ago
+      image: eccloud/sc4s
       mgmt_ipv4: 172.22.22.11 # Pick a fixed IP
       startup-delay: 30 # Give splunk a chance to start first, wait-for doesn't work
       env:
