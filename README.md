@@ -1,6 +1,6 @@
 # Intro
 
-This repo contains containerlab-based labs demonstrating how logs from SR Linux network elements can be collected, parsed, and stored using [Splunk](https://www.splunk.com/) with [Splunk-Connect-4-Syslog](https://splunkbase.splunk.com/app/4740).
+This repo contains containerlab-based labs demonstrating how logs from SR Linux network elements can be collected, parsed, and stored using [Splunk](https://www.splunk.com/) with [Splunk-Connect-4-Syslog](https://splunkbase.splunk.com/app/4740) (using a [custom log parser](./app-syslog-nokia_srlinux.conf))
 
 A series of blog posts go into the details of various deployment models:
 
@@ -43,15 +43,11 @@ sudo clab deploy
 
 ## Looking at logs
 
-Your pre-configured Splunk instance should available via [http://localhost:8000](http://localhost:8000).
+Your pre-configured Splunk instance should be available via [http://localhost:8000](http://localhost:8000).
 Now you can login to the dashboard (admin/changeme), go to the 'Search' tab and search for 'index="netops"'
 
-![kibana discovery][kibaba_dashboard]
+![splunk search][screenshot]
 
-![kibana dashboard][kibaba_dashboard_2]
-
-[kibaba_dashboard]: ./pic/kibana_dashboard.png "Kibana dashboard #1"
-[kibaba_dashboard_2]: ./pic/kibana_dashboard_2.png "Kibana dashboard #2"
-[outage_simulation]: ./pic/outage_simulation.gif "Simulation"
 [srk-with-splunk-post]: https://learn.srlinux.dev/blog/2023/sr-linux-logging-with-splunk/
 [topology]: ./splunk_topology.png
+[screenshot]: ./splunk_search.png
